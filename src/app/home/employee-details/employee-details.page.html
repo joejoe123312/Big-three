@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>Employee Details</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card style="border-raidus: 50px">
+    <ion-card-header class="ion-text-center">
+      <ion-card-title>{{employees.name}}</ion-card-title>
+      <ion-card-subtitle>{{employees.job}}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-img [src]="employees.imageUrl"></ion-img>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
